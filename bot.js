@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "dz!";
+const prefix = "z!";
 /////////////////////////
 ////////////////////////
 
@@ -313,20 +313,20 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'dz!help') {
+    if (message.content === 'z!help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**أكتب هي (dz!) + :**')
-        .addField('play', 'لتشغيل اغنية')
-        .addField('join', 'دخول رومك الصوتي')
-        .addField('disconnect', 'الخروج من رومك الصوتي')
-        .addField('skip', 'تخطي الأغنية')
-        .addField('pause', 'ايقاف الاغنية مؤقتا')
-        .addField('resume', 'تكملة الاغنية')
-        .addField('queue', 'اظهار قائمة التشغيل')
-        .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
+        .setDescription('**أكتب هي :**')
+        .addField('z!play', 'لتشغيل اغنية')
+        .addField('z!join', 'دخول رومك الصوتي')
+        .addField('z!disconnect', 'الخروج من رومك الصوتي')
+        .addField('z!skip', 'تخطي الأغنية')
+        .addField('z!pause', 'ايقاف الاغنية مؤقتا')
+        .addField('z!resume', 'تكملة الاغنية')
+        .addField('z!queue', 'اظهار قائمة التشغيل')
+        .addField('z!np', 'اظهار الاغنية اللي انت مشغلها حاليا')
 	.setFooter('============================================')
-        .addField('ghelp', 'اظهاراوامر العامة')
+        .addField('z!ghelp', 'اظهاراوامر العامة')
         .setFooter('by : AbdouFERSAOUI_Dz 👻็็็็็็็็็#5217')
       message.channel.send(helpEmbed);
     }
@@ -351,7 +351,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`dz!help music ,`,"http://twitch.tv/abdoufersaoui_dz")
+client.user.setGame(`z!help Zaki music ,`,"http://twitch.tv/abdoufersaoui_dz")
 client.user.setStatus("Dz")
 });
 
