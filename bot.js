@@ -347,16 +347,11 @@ client.on('message', message => {
 var adminprefix = "z";
 const devs = ['461468630773661699','403911754590978049'];
 client.on('message', message => {//Toxic Codes
-    var argresult = message.content.split(` `).slice(1).join(' ');//Toxic Codes
-      if (!developers.includes(message.author.id)) return;
-      
+    var argresult = message.content.split(` `).slice(1).join(' ');//Toxic Code
   if (message.content.startsWith(adminprefix + 'setg')) {
     client.user.setGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
   } else 
-     if (message.content === (adminprefix + "leave")) {//Toxic Codes
-    message.guild.leave();   //Toxic Codes
-  } else  
   if (message.content.startsWith(adminprefix + 'setw')) {
   client.user.setActivity(argresult, {type:'WATCHING'});//Toxic Codes
       message.channel.send(`**✅   ${argresult}**`)//Toxic Codes
